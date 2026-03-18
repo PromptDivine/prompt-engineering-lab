@@ -1,0 +1,559 @@
+# ============================================================
+
+# STYLE TRANSFER PROMPTS — Prompt Library
+
+# Project: P2 · prompt-engineering-lab
+
+# 
+
+# 10 target styles × 3 prompt strategies each = 30 prompts
+
+# Strategies per style:
+
+# A = direct instruction
+
+# B = role + audience
+
+# C = contrastive (do/don’t rules)
+
+# 
+
+# Variable: {{TEXT}} = source text to rewrite
+
+# ============================================================
+
+# ────────────────────────────────────────────
+
+# STYLE 01 — JOURNALISM (Inverted Pyramid)
+
+# ────────────────────────────────────────────
+
+## [S01A] journalism_direct
+style: journalism
+strategy: direct_instruction
+formality_target: high
+
+Rewrite the following text in the style of a professional news article.
+Use the inverted pyramid structure: most important facts first.
+Write in third person. Use short, declarative sentences. No opinions.
+
+Text:
+{{TEXT}}
+
+Rewritten:
+
+## [S01B] journalism_role
+style: journalism
+strategy: role_prompting
+formality_target: high
+
+You are a senior reporter at a major national newspaper. Your editor
+has asked you to rewrite the following text as a tight, factual news
+story for tomorrow’s front page. Readers are educated adults who want
+facts fast.
+
+Text:
+{{TEXT}}
+
+News story:
+
+## [S01C] journalism_contrastive
+style: journalism
+strategy: contrastive
+formality_target: high
+
+Rewrite the text below as a news article.
+
+DO: Lead with the most newsworthy fact. Use who/what/when/where/why.
+Write in active voice. Keep sentences under 20 words. Use quotes if present.
+DON’T: Use first person. Express opinions. Use passive voice.
+Begin with background or context. Use adjectives that aren’t factual.
+
+Text:
+{{TEXT}}
+
+News article:
+
+# ────────────────────────────────────────────
+
+# STYLE 02 — ACADEMIC
+
+# ────────────────────────────────────────────
+
+## [S02A] academic_direct
+style: academic
+strategy: direct_instruction
+formality_target: very_high
+
+Rewrite the following text in formal academic prose suitable for a
+peer-reviewed journal. Use hedged language, passive constructions where
+appropriate, disciplinary vocabulary, and a neutral, objective tone.
+Aim for a Flesch-Kincaid grade level of 14-16.
+
+Text:
+{{TEXT}}
+
+Academic version:
+
+## [S02B] academic_role
+style: academic
+strategy: role_prompting
+formality_target: very_high
+
+You are a tenured professor writing for an academic journal.
+Transform the following text into rigorous scholarly prose.
+Your audience is domain experts who expect precise terminology,
+hedged claims, and citation-worthy language.
+
+Text:
+{{TEXT}}
+
+Scholarly version:
+
+## [S02C] academic_contrastive
+style: academic
+strategy: contrastive
+formality_target: very_high
+
+Transform the text into academic writing.
+
+DO: Use formal register. Hedge claims (“evidence suggests”, “it appears”).
+Use discipline-specific vocabulary. Write complex, structured sentences.
+Employ passive voice for objectivity. Reference implications.
+DON’T: Use contractions. Write in first person singular (“I think”).
+Use colloquial phrases. State things as absolute fact without evidence.
+Use emotional or evaluative language.
+
+Text:
+{{TEXT}}
+
+Academic version:
+
+# ────────────────────────────────────────────
+
+# STYLE 03 — LEGAL
+
+# ────────────────────────────────────────────
+
+## [S03A] legal_direct
+style: legal
+strategy: direct_instruction
+formality_target: very_high
+
+Rewrite the following text in formal legal language as it might appear
+in a contract, legal brief, or official document. Use precise definitions,
+conditional clauses, and legally cautious phrasing.
+
+Text:
+{{TEXT}}
+
+Legal version:
+
+## [S03B] legal_role
+style: legal
+strategy: role_prompting
+formality_target: very_high
+
+You are a senior attorney drafting a formal legal document.
+Rewrite the following text with the precision, formality, and
+careful qualification expected in legal writing. Your audience
+is other legal professionals and judges.
+
+Text:
+{{TEXT}}
+
+Legal version:
+
+## [S03C] legal_contrastive
+style: legal
+strategy: contrastive
+formality_target: very_high
+
+Rewrite the text in legal style.
+
+DO: Use “shall”, “herein”, “pursuant to”, “notwithstanding”.
+Define key terms. Use conditional structures (“in the event that”).
+Be exhaustively precise. Use numbered sub-clauses for complex points.
+DON’T: Use informal language. Leave terms ambiguous.
+Use contractions. Express emotion. Omit qualifications.
+
+Text:
+{{TEXT}}
+
+Legal version:
+
+# ────────────────────────────────────────────
+
+# STYLE 04 — EXECUTIVE / BUSINESS
+
+# ────────────────────────────────────────────
+
+## [S04A] executive_direct
+style: executive
+strategy: direct_instruction
+formality_target: high
+
+Rewrite the following text as an executive summary for a C-suite audience.
+Be direct and action-oriented. Lead with business impact.
+Keep it to 3-5 sentences maximum. Quantify where possible.
+
+Text:
+{{TEXT}}
+
+Executive summary:
+
+## [S04B] executive_role
+style: executive
+strategy: role_prompting
+formality_target: high
+
+You are a McKinsey consultant summarizing findings for a CEO.
+Every word must earn its place. Lead with the “so what”.
+Rewrite the following text for a board-level audience that
+has 60 seconds to read it.
+
+Text:
+{{TEXT}}
+
+Executive version:
+
+## [S04C] executive_contrastive
+style: executive
+strategy: contrastive
+formality_target: high
+
+Rewrite for a C-suite executive audience.
+
+DO: Lead with impact and implications. Use business language.
+Be direct. Quantify results. Use action verbs. Stay under 100 words.
+DON’T: Bury the lead. Use jargon without payoff. Over-explain context.
+Include unnecessary background. Be vague about outcomes.
+
+Text:
+{{TEXT}}
+
+Executive version:
+
+# ────────────────────────────────────────────
+
+# STYLE 05 — CASUAL / GEN-Z
+
+# ────────────────────────────────────────────
+
+## [S05A] casual_direct
+style: casual
+strategy: direct_instruction
+formality_target: very_low
+
+Rewrite the following text in a casual, conversational style for
+a young online audience. Use informal language, short sentences,
+and a friendly relatable tone. Contractions are fine.
+
+Text:
+{{TEXT}}
+
+Casual version:
+
+## [S05B] casual_role
+style: casual
+strategy: role_prompting
+formality_target: very_low
+
+You’re a popular Gen-Z content creator explaining something to your
+followers. Make it feel like a text message or a casual Instagram caption.
+Keep it real, relatable, and easy to understand. No corporate speak.
+
+Text:
+{{TEXT}}
+
+Casual version:
+
+## [S05C] casual_contrastive
+style: casual
+strategy: contrastive
+formality_target: very_low
+
+Rewrite for a casual online audience.
+
+DO: Use contractions. Keep sentences short. Sound like a real person talking.
+Use “you” and “we”. It’s okay to start sentences with “And” or “But”.
+Use dashes and ellipses for rhythm.
+DON’T: Use formal vocabulary or stiff phrasing. Sound like a press release.
+Write long complex sentences. Use passive voice. Be boring.
+
+Text:
+{{TEXT}}
+
+Casual version:
+
+# ────────────────────────────────────────────
+
+# STYLE 06 — STORYTELLING / NARRATIVE
+
+# ────────────────────────────────────────────
+
+## [S06A] storytelling_direct
+style: storytelling
+strategy: direct_instruction
+formality_target: medium
+
+Rewrite the following text as compelling narrative storytelling.
+Draw the reader in with a scene or moment. Use vivid language,
+character perspective where applicable, and narrative tension.
+Make the reader feel something.
+
+Text:
+{{TEXT}}
+
+Story version:
+
+## [S06B] storytelling_role
+style: storytelling
+strategy: role_prompting
+formality_target: medium
+
+You are an award-winning long-form journalist writing for The Atlantic.
+Transform the following text into a gripping narrative opening.
+Hook the reader in the first sentence. Create a sense of stakes and
+human consequence.
+
+Text:
+{{TEXT}}
+
+Narrative version:
+
+## [S06C] storytelling_contrastive
+style: storytelling
+strategy: contrastive
+formality_target: medium
+
+Transform the text into narrative storytelling.
+
+DO: Open with a scene, moment, or person - not a fact.
+Use sensory detail. Show cause and effect. Create forward momentum.
+Let the “news” emerge through narrative, not announcement.
+DON’T: Start with “This is a story about…”
+List facts without context. Use passive voice. Sound like a report.
+Over-explain. Tell when you can show.
+
+Text:
+{{TEXT}}
+
+Story version:
+
+# ────────────────────────────────────────────
+
+# STYLE 07 — TECHNICAL / DOCUMENTATION
+
+# ────────────────────────────────────────────
+
+## [S07A] technical_direct
+style: technical
+strategy: direct_instruction
+formality_target: high
+
+Rewrite the following text as clear technical documentation.
+Use precise, unambiguous language. Structure with steps or logical
+sections if applicable. Define any specialized terms used.
+Write for a technically literate audience.
+
+Text:
+{{TEXT}}
+
+Technical version:
+
+## [S07B] technical_role
+style: technical
+strategy: role_prompting
+formality_target: high
+
+You are a senior technical writer at a software company.
+Your job is to take complex information and make it precise
+and unambiguous for a technical audience of engineers and
+developers. Eliminate all ambiguity.
+
+Text:
+{{TEXT}}
+
+Technical documentation:
+
+## [S07C] technical_contrastive
+style: technical
+strategy: contrastive
+formality_target: high
+
+Rewrite as technical documentation.
+
+DO: Be specific and precise. Use consistent terminology.
+Prefer numbered steps for processes. Define acronyms on first use.
+Use present tense for describing behavior (“the system returns…”).
+DON’T: Use vague language (“some”, “several”, “may or may not”).
+Use metaphors or narrative framing. Be conversational.
+Leave edge cases unaddressed.
+
+Text:
+{{TEXT}}
+
+Technical version:
+
+# ────────────────────────────────────────────
+
+# STYLE 08 — MARKETING / COPYWRITING
+
+# ────────────────────────────────────────────
+
+## [S08A] marketing_direct
+style: marketing
+strategy: direct_instruction
+formality_target: medium
+
+Rewrite the following text as persuasive marketing copy.
+Focus on benefits, not features. Use an engaging, enthusiastic tone.
+Include a clear value proposition. Create desire and urgency.
+
+Text:
+{{TEXT}}
+
+Marketing copy:
+
+## [S08B] marketing_role
+style: marketing
+strategy: role_prompting
+formality_target: medium
+
+You are a world-class copywriter who has written campaigns for
+Apple and Nike. Your copy makes people feel something and then act.
+Rewrite the following text to be irresistibly compelling.
+Focus entirely on what the reader gains.
+
+Text:
+{{TEXT}}
+
+Marketing copy:
+
+## [S08C] marketing_contrastive
+style: marketing
+strategy: contrastive
+formality_target: medium
+
+Rewrite as marketing copy.
+
+DO: Lead with the benefit to the reader. Use “you” liberally.
+Create emotional resonance. Use power words. Build to a call to action.
+Make claims bold but credible.
+DON’T: Lead with features or specifications. Use passive voice.
+Be modest or hedge excessively. Use corporate or bureaucratic language.
+Bury the value proposition.
+
+Text:
+{{TEXT}}
+
+Marketing copy:
+
+# ────────────────────────────────────────────
+
+# STYLE 09 — MEDICAL / CLINICAL
+
+# ────────────────────────────────────────────
+
+## [S09A] medical_direct
+style: medical
+strategy: direct_instruction
+formality_target: very_high
+
+Rewrite the following text in clinical medical language suitable
+for a healthcare professional audience. Use correct medical terminology,
+precise measurement language if applicable, and appropriately
+cautious clinical framing.
+
+Text:
+{{TEXT}}
+
+Clinical version:
+
+## [S09B] medical_role
+style: medical
+strategy: role_prompting
+formality_target: very_high
+
+You are a physician writing a clinical case note or medical journal
+summary. Rewrite the following text with the precision, objectivity,
+and medical terminology expected in clinical documentation.
+
+Text:
+{{TEXT}}
+
+Clinical version:
+
+## [S09C] medical_contrastive
+style: medical
+strategy: contrastive
+formality_target: very_high
+
+Rewrite in clinical medical style.
+
+DO: Use correct anatomical and medical terminology. Be precise about
+quantities and timeframes. Use clinical hedging (“presents with”,
+“consistent with”, “suggestive of”). Write in third person.
+DON’T: Use lay terms where medical terms exist. Speculate without basis.
+Use emotional or evaluative language. Be vague about symptoms or findings.
+
+Text:
+{{TEXT}}
+
+Clinical version:
+
+# ────────────────────────────────────────────
+
+# STYLE 10 — MINIMALIST
+
+# ────────────────────────────────────────────
+
+## [S10A] minimalist_direct
+style: minimalist
+strategy: direct_instruction
+formality_target: medium
+
+Rewrite the following text in the most minimal way possible.
+Remove every word that isn’t essential. No filler, no repetition,
+no throat-clearing. Every sentence must earn its place.
+Aim to reduce word count by at least 50% without losing meaning.
+
+Text:
+{{TEXT}}
+
+Minimal version:
+
+## [S10B] minimalist_role
+style: minimalist
+strategy: role_prompting
+formality_target: medium
+
+You are an editor famous for ruthless cutting. Your rule:
+if a word doesn’t add meaning, it’s gone. Rewrite the following
+text in the fewest words possible while keeping every important idea.
+Channel Hemingway. No waste.
+
+Text:
+{{TEXT}}
+
+Minimal version:
+
+## [S10C] minimalist_contrastive
+style: minimalist
+strategy: contrastive
+formality_target: medium
+
+Rewrite with radical minimalism.
+
+DO: Cut adjectives unless critical. Merge sentences. Use strong verbs.
+Delete all throat-clearing (“It is worth noting that…”).
+Delete all redundancy. Delete all filler.
+DON’T: Repeat ideas. Use weak verbs + adverbs instead of strong verbs.
+Use three words where one works. Keep any sentence that could be removed
+without losing meaning.
+
+Text:
+{{TEXT}}
+
+Minimal version:

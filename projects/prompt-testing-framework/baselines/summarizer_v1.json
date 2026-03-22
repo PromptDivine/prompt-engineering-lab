@@ -1,0 +1,17 @@
+{
+  "name": "summarizer_v1",
+  "prompt": "Summarize in 2 sentences: {{text}}",
+  "models": [
+    "gpt-4o-mini"
+  ],
+  "created_at": "2026-03-22T00:23:08.574428",
+  "scores": {
+    "gpt-4o-mini": {
+      "rubric_no_refusal": 1.0,
+      "rubric_word_limit_60": 1.0,
+      "rubric_score": 1.0,
+      "latency_s": 3.249
+    }
+  },
+  "metadata": {}
+}

@@ -1,0 +1,53 @@
+# tests/summarizer.yaml
+# =====================
+# Example promptlab test suite for a summarization prompt.
+# Run with: promptlab run tests/summarizer.yaml
+
+prompts:
+  zero_shot: "Summarize the following text:\n\n{{text}}"
+  instructed: "Summarize the following text in 2-3 sentences. Be concise and factual.\n\n{{text}}"
+  role_based: "You are a professional editor. Summarize the following text in 2-3 clear sentences, capturing only the most important information.\n\n{{text}}"
+
+models:
+  - gpt-4o-mini
+  - claude-haiku-4-5-20251001
+
+inputs:
+  - id: tech_article
+    text: >
+      Researchers at Stanford University have developed a new approach to solar cell
+      manufacturing that could reduce costs by up to 40 percent. The technique uses
+      a novel coating process that eliminates several expensive steps in traditional
+      silicon wafer production. In lab tests, the new cells achieved 24.1 percent
+      efficiency, comparable to conventional panels. The team expects commercial
+      applications within three years if manufacturing partners can be secured.
+
+  - id: business_report
+    text: >
+      Global smartphone shipments declined 5.7 percent in the third quarter compared
+      to the same period last year, according to market research firm IDC. The drop
+      was driven primarily by weak consumer demand in China and Europe, where economic
+      uncertainty has led buyers to delay upgrades. Apple maintained its lead in
+      premium segment share at 57 percent, while Samsung held overall market leadership
+      with 22 percent of all shipments. Analysts expect a modest recovery in Q4
+      driven by holiday purchases and new flagship launches.
+
+  - id: health_news
+    text: >
+      A clinical trial involving 3,200 participants found that a 12-week exercise
+      program reduced symptoms of mild to moderate depression by 45 percent, comparable
+      to results seen with antidepressant medication in similar trials. Participants
+      who exercised at least 150 minutes per week showed the greatest improvement.
+      Researchers caution that exercise should complement, not replace, professional
+      mental health treatment for severe cases. The study was published in JAMA Psychiatry.
+
+checks:
+  - type: word_limit
+    n: 80
+  - type: must_not_contain
+    phrase: "I cannot"
+  - type: must_not_contain
+    phrase: "As an AI"
+  - type: no_refusal
+
+llm_judge: false

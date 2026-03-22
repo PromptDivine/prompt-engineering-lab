@@ -1,0 +1,37 @@
+# tests/instruction_following.yaml
+# =================================
+# Tests for strict instruction compliance.
+# Run with: promptlab run tests/instruction_following.yaml
+
+prompts:
+  strict: >
+    Complete ALL of the following steps exactly:
+    1) Write a one-sentence definition of {{topic}}.
+    2) Give one real-world example.
+    3) State one limitation.
+    4) End with the phrase: 'End of response.'
+  relaxed: >
+    Tell me about {{topic}}. Cover: what it is, a real example, and a limitation.
+
+models:
+  - gpt-4o-mini
+  - claude-haiku-4-5-20251001
+  - claude-sonnet-4-6
+
+inputs:
+  - id: machine_learning
+    topic: machine learning
+  - id: blockchain
+    topic: blockchain technology
+  - id: quantum_computing
+    topic: quantum computing
+
+checks:
+  - type: must_contain
+    phrase: "example"
+  - type: must_contain
+    phrase: "limitation"
+  - type: numbered_list
+    n: 3
+
+llm_judge: false

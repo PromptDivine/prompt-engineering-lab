@@ -1,0 +1,221 @@
+{
+  "run_id": "summarizer",
+  "results": [
+    {
+      "run_id": "summarizer",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "prompt_id": "zero_shot",
+      "input_id": "tech_article",
+      "rendered_prompt": "Summarize the following text:\n\nResearchers at Stanford University have developed a new approach to solar cell manufacturing that could reduce costs by up to 40 percent. The technique uses a novel coating process that eliminates several expensive steps in traditional silicon wafer production. In lab tests, the new cells achieved 24.1 percent efficiency, comparable to conventional panels. The team expects commercial applications within three years if manufacturing partners can be secured.\n",
+      "output": "Researchers at Stanford University have created a new solar cell manufacturing method that could cut costs by up to 40%. This technique involves a novel coating process that removes several costly steps in traditional silicon wafer production. In lab tests, the new solar cells reached an efficiency of 24.1%, similar to conventional panels. The team anticipates commercial applications within three years, pending the establishment of manufacturing partnerships.",
+      "latency_s": 5.94,
+      "prompt_tokens": 91,
+      "completion_tokens": 79,
+      "scores": {
+        "rubric_word_limit_80": 1.0,
+        "rubric_not_contains_I cannot": 1.0,
+        "rubric_not_contains_As an AI": 1.0,
+        "rubric_no_refusal": 1.0,
+        "rubric_score": 1.0,
+        "composite": 1.0
+      },
+      "metadata": {
+        "text": "Researchers at Stanford University have developed a new approach to solar cell manufacturing that could reduce costs by up to 40 percent. The technique uses a novel coating process that eliminates several expensive steps in traditional silicon wafer production. In lab tests, the new cells achieved 24.1 percent efficiency, comparable to conventional panels. The team expects commercial applications within three years if manufacturing partners can be secured.\n"
+      },
+      "error": null
+    },
+    {
+      "run_id": "summarizer",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "prompt_id": "zero_shot",
+      "input_id": "business_report",
+      "rendered_prompt": "Summarize the following text:\n\nGlobal smartphone shipments declined 5.7 percent in the third quarter compared to the same period last year, according to market research firm IDC. The drop was driven primarily by weak consumer demand in China and Europe, where economic uncertainty has led buyers to delay upgrades. Apple maintained its lead in premium segment share at 57 percent, while Samsung held overall market leadership with 22 percent of all shipments. Analysts expect a modest recovery in Q4 driven by holiday purchases and new flagship launches.\n",
+      "output": "Global smartphone shipments fell by 5.7 percent in Q3 year-over-year, largely due to weak consumer demand in China and Europe amid economic uncertainty. Apple led the premium segment with a 57 percent share, while Samsung held the overall market lead with 22 percent of shipments. Analysts anticipate a slight recovery in Q4, fueled by holiday shopping and new flagship releases.",
+      "latency_s": 1.799,
+      "prompt_tokens": 110,
+      "completion_tokens": 75,
+      "scores": {
+        "rubric_word_limit_80": 1.0,
+        "rubric_not_contains_I cannot": 1.0,
+        "rubric_not_contains_As an AI": 1.0,
+        "rubric_no_refusal": 1.0,
+        "rubric_score": 1.0,
+        "composite": 1.0
+      },
+      "metadata": {
+        "text": "Global smartphone shipments declined 5.7 percent in the third quarter compared to the same period last year, according to market research firm IDC. The drop was driven primarily by weak consumer demand in China and Europe, where economic uncertainty has led buyers to delay upgrades. Apple maintained its lead in premium segment share at 57 percent, while Samsung held overall market leadership with 22 percent of all shipments. Analysts expect a modest recovery in Q4 driven by holiday purchases and new flagship launches.\n"
+      },
+      "error": null
+    },
+    {
+      "run_id": "summarizer",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "prompt_id": "zero_shot",
+      "input_id": "health_news",
+      "rendered_prompt": "Summarize the following text:\n\nA clinical trial involving 3,200 participants found that a 12-week exercise program reduced symptoms of mild to moderate depression by 45 percent, comparable to results seen with antidepressant medication in similar trials. Participants who exercised at least 150 minutes per week showed the greatest improvement. Researchers caution that exercise should complement, not replace, professional mental health treatment for severe cases. The study was published in JAMA Psychiatry.\n",
+      "output": "A clinical trial with 3,200 participants demonstrated that a 12-week exercise program reduced mild to moderate depression symptoms by 45%, similar to the effects of antidepressant medication. Those who exercised at least 150 minutes weekly experienced the most significant improvements. Researchers emphasize that exercise should complement, not replace, professional mental health treatment for severe cases. The findings were published in JAMA Psychiatry.",
+      "latency_s": 2.073,
+      "prompt_tokens": 97,
+      "completion_tokens": 78,
+      "scores": {
+        "rubric_word_limit_80": 1.0,
+        "rubric_not_contains_I cannot": 1.0,
+        "rubric_not_contains_As an AI": 1.0,
+        "rubric_no_refusal": 1.0,
+        "rubric_score": 1.0,
+        "composite": 1.0
+      },
+      "metadata": {
+        "text": "A clinical trial involving 3,200 participants found that a 12-week exercise program reduced symptoms of mild to moderate depression by 45 percent, comparable to results seen with antidepressant medication in similar trials. Participants who exercised at least 150 minutes per week showed the greatest improvement. Researchers caution that exercise should complement, not replace, professional mental health treatment for severe cases. The study was published in JAMA Psychiatry.\n"
+      },
+      "error": null
+    },
+    {
+      "run_id": "summarizer",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "prompt_id": "instructed",
+      "input_id": "tech_article",
+      "rendered_prompt": "Summarize the following text in 2-3 sentences. Be concise and factual.\n\nResearchers at Stanford University have developed a new approach to solar cell manufacturing that could reduce costs by up to 40 percent. The technique uses a novel coating process that eliminates several expensive steps in traditional silicon wafer production. In lab tests, the new cells achieved 24.1 percent efficiency, comparable to conventional panels. The team expects commercial applications within three years if manufacturing partners can be secured.\n",
+      "output": "Stanford University researchers have created a new solar cell manufacturing method that could cut costs by up to 40% by streamlining the traditional silicon wafer production process. Their lab tests showed the new cells achieving 24.1% efficiency, similar to conventional panels, with potential for commercial application within three years, pending partnerships with manufacturers.",
+      "latency_s": 1.875,
+      "prompt_tokens": 102,
+      "completion_tokens": 66,
+      "scores": {
+        "rubric_word_limit_80": 1.0,
+        "rubric_not_contains_I cannot": 1.0,
+        "rubric_not_contains_As an AI": 1.0,
+        "rubric_no_refusal": 1.0,
+        "rubric_score": 1.0,
+        "composite": 1.0
+      },
+      "metadata": {
+        "text": "Researchers at Stanford University have developed a new approach to solar cell manufacturing that could reduce costs by up to 40 percent. The technique uses a novel coating process that eliminates several expensive steps in traditional silicon wafer production. In lab tests, the new cells achieved 24.1 percent efficiency, comparable to conventional panels. The team expects commercial applications within three years if manufacturing partners can be secured.\n"
+      },
+      "error": null
+    },
+    {
+      "run_id": "summarizer",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "prompt_id": "instructed",
+      "input_id": "business_report",
+      "rendered_prompt": "Summarize the following text in 2-3 sentences. Be concise and factual.\n\nGlobal smartphone shipments declined 5.7 percent in the third quarter compared to the same period last year, according to market research firm IDC. The drop was driven primarily by weak consumer demand in China and Europe, where economic uncertainty has led buyers to delay upgrades. Apple maintained its lead in premium segment share at 57 percent, while Samsung held overall market leadership with 22 percent of all shipments. Analysts expect a modest recovery in Q4 driven by holiday purchases and new flagship launches.\n",
+      "output": "Global smartphone shipments fell by 5.7 percent in Q3 year-over-year, primarily due to weak consumer demand in China and Europe. Apple led the premium segment with a 57 percent share, while Samsung maintained overall market leadership with 22 percent of total shipments. Analysts anticipate a modest recovery in Q4, fueled by holiday purchases and new flagship launches.",
+      "latency_s": 1.794,
+      "prompt_tokens": 121,
+      "completion_tokens": 72,
+      "scores": {
+        "rubric_word_limit_80": 1.0,
+        "rubric_not_contains_I cannot": 1.0,
+        "rubric_not_contains_As an AI": 1.0,
+        "rubric_no_refusal": 1.0,
+        "rubric_score": 1.0,
+        "composite": 1.0
+      },
+      "metadata": {
+        "text": "Global smartphone shipments declined 5.7 percent in the third quarter compared to the same period last year, according to market research firm IDC. The drop was driven primarily by weak consumer demand in China and Europe, where economic uncertainty has led buyers to delay upgrades. Apple maintained its lead in premium segment share at 57 percent, while Samsung held overall market leadership with 22 percent of all shipments. Analysts expect a modest recovery in Q4 driven by holiday purchases and new flagship launches.\n"
+      },
+      "error": null
+    },
+    {
+      "run_id": "summarizer",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "prompt_id": "instructed",
+      "input_id": "health_news",
+      "rendered_prompt": "Summarize the following text in 2-3 sentences. Be concise and factual.\n\nA clinical trial involving 3,200 participants found that a 12-week exercise program reduced symptoms of mild to moderate depression by 45 percent, comparable to results seen with antidepressant medication in similar trials. Participants who exercised at least 150 minutes per week showed the greatest improvement. Researchers caution that exercise should complement, not replace, professional mental health treatment for severe cases. The study was published in JAMA Psychiatry.\n",
+      "output": "A clinical trial with 3,200 participants demonstrated that a 12-week exercise program reduced symptoms of mild to moderate depression by 45%, similar to the effects of antidepressant medication. Those who exercised at least 150 minutes per week experienced the most significant improvements. Researchers emphasize that exercise should be an adjunct to, rather than a substitute for, professional mental health treatment in severe cases.",
+      "latency_s": 2.025,
+      "prompt_tokens": 108,
+      "completion_tokens": 77,
+      "scores": {
+        "rubric_word_limit_80": 1.0,
+        "rubric_not_contains_I cannot": 1.0,
+        "rubric_not_contains_As an AI": 1.0,
+        "rubric_no_refusal": 1.0,
+        "rubric_score": 1.0,
+        "composite": 1.0
+      },
+      "metadata": {
+        "text": "A clinical trial involving 3,200 participants found that a 12-week exercise program reduced symptoms of mild to moderate depression by 45 percent, comparable to results seen with antidepressant medication in similar trials. Participants who exercised at least 150 minutes per week showed the greatest improvement. Researchers caution that exercise should complement, not replace, professional mental health treatment for severe cases. The study was published in JAMA Psychiatry.\n"
+      },
+      "error": null
+    },
+    {
+      "run_id": "summarizer",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "prompt_id": "role_based",
+      "input_id": "tech_article",
+      "rendered_prompt": "You are a professional editor. Summarize the following text in 2-3 clear sentences, capturing only the most important information.\n\nResearchers at Stanford University have developed a new approach to solar cell manufacturing that could reduce costs by up to 40 percent. The technique uses a novel coating process that eliminates several expensive steps in traditional silicon wafer production. In lab tests, the new cells achieved 24.1 percent efficiency, comparable to conventional panels. The team expects commercial applications within three years if manufacturing partners can be secured.\n",
+      "output": "Researchers at Stanford University have created a new solar cell manufacturing method that could cut costs by up to 40% by streamlining the production process. Their lab tests show that the new cells achieve 24.1% efficiency, similar to traditional panels, with potential for commercial use within three years, pending partnerships with manufacturers.",
+      "latency_s": 1.627,
+      "prompt_tokens": 111,
+      "completion_tokens": 64,
+      "scores": {
+        "rubric_word_limit_80": 1.0,
+        "rubric_not_contains_I cannot": 1.0,
+        "rubric_not_contains_As an AI": 1.0,
+        "rubric_no_refusal": 1.0,
+        "rubric_score": 1.0,
+        "composite": 1.0
+      },
+      "metadata": {
+        "text": "Researchers at Stanford University have developed a new approach to solar cell manufacturing that could reduce costs by up to 40 percent. The technique uses a novel coating process that eliminates several expensive steps in traditional silicon wafer production. In lab tests, the new cells achieved 24.1 percent efficiency, comparable to conventional panels. The team expects commercial applications within three years if manufacturing partners can be secured.\n"
+      },
+      "error": null
+    },
+    {
+      "run_id": "summarizer",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "prompt_id": "role_based",
+      "input_id": "business_report",
+      "rendered_prompt": "You are a professional editor. Summarize the following text in 2-3 clear sentences, capturing only the most important information.\n\nGlobal smartphone shipments declined 5.7 percent in the third quarter compared to the same period last year, according to market research firm IDC. The drop was driven primarily by weak consumer demand in China and Europe, where economic uncertainty has led buyers to delay upgrades. Apple maintained its lead in premium segment share at 57 percent, while Samsung held overall market leadership with 22 percent of all shipments. Analysts expect a modest recovery in Q4 driven by holiday purchases and new flagship launches.\n",
+      "output": "Global smartphone shipments fell 5.7 percent in Q3 year-over-year, primarily due to weak consumer demand in China and Europe. Apple led the premium segment with a 57 percent share, while Samsung maintained overall market leadership with 22 percent of shipments. Analysts anticipate a modest recovery in Q4, fueled by holiday purchases and new flagship launches.",
+      "latency_s": 1.867,
+      "prompt_tokens": 130,
+      "completion_tokens": 70,
+      "scores": {
+        "rubric_word_limit_80": 1.0,
+        "rubric_not_contains_I cannot": 1.0,
+        "rubric_not_contains_As an AI": 1.0,
+        "rubric_no_refusal": 1.0,
+        "rubric_score": 1.0,
+        "composite": 1.0
+      },
+      "metadata": {
+        "text": "Global smartphone shipments declined 5.7 percent in the third quarter compared to the same period last year, according to market research firm IDC. The drop was driven primarily by weak consumer demand in China and Europe, where economic uncertainty has led buyers to delay upgrades. Apple maintained its lead in premium segment share at 57 percent, while Samsung held overall market leadership with 22 percent of all shipments. Analysts expect a modest recovery in Q4 driven by holiday purchases and new flagship launches.\n"
+      },
+      "error": null
+    },
+    {
+      "run_id": "summarizer",
+      "model": "gpt-4o-mini",
+      "provider": "openai",
+      "prompt_id": "role_based",
+      "input_id": "health_news",
+      "rendered_prompt": "You are a professional editor. Summarize the following text in 2-3 clear sentences, capturing only the most important information.\n\nA clinical trial involving 3,200 participants found that a 12-week exercise program reduced symptoms of mild to moderate depression by 45 percent, comparable to results seen with antidepressant medication in similar trials. Participants who exercised at least 150 minutes per week showed the greatest improvement. Researchers caution that exercise should complement, not replace, professional mental health treatment for severe cases. The study was published in JAMA Psychiatry.\n",
+      "output": "A clinical trial with 3,200 participants demonstrated that a 12-week exercise program reduced symptoms of mild to moderate depression by 45%, similar to the effects of antidepressant medication. Those who exercised at least 150 minutes per week experienced the most significant improvements. Researchers emphasize that exercise should complement, rather than replace, professional mental health treatment for severe cases, as reported in JAMA Psychiatry.",
+      "latency_s": 2.09,
+      "prompt_tokens": 117,
+      "completion_tokens": 79,
+      "scores": {
+        "rubric_word_limit_80": 1.0,
+        "rubric_not_contains_I cannot": 1.0,
+        "rubric_not_contains_As an AI": 1.0,
+        "rubric_no_refusal": 1.0,
+        "rubric_score": 1.0,
+        "composite": 1.0
+      },
+      "metadata": {
+        "text": "A clinical trial involving 3,200 participants found that a 12-week exercise program reduced symptoms of mild to moderate depression by 45 percent, comparable to results seen with antidepressant medication in similar trials. Participants who exercised at least 150 minutes per week showed the greatest improvement. Researchers caution that exercise should complement, not replace, professional mental health treatment for severe cases. The study was published in JAMA Psychiatry.\n"
+      },
+      "error": null
+    }
+  ]
+}

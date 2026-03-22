@@ -1,0 +1,51 @@
+run_id,model,provider,prompt_id,input_id,rendered_prompt,output,latency_s,prompt_tokens,completion_tokens,scores,metadata,error
+summarizer_demo,gpt-4o-mini,openai,zero_shot,tech,"Summarize the following text:
+
+Researchers developed a solar cell technique reducing costs by 40% with 24.1% efficiency, expected commercialization in 3 years.","Researchers have created a solar cell technique that lowers costs by 40% while achieving 24.1% efficiency, with commercialization anticipated in three years.",4.859,41,30,"{'rubric_word_limit_80': 1.0, 'rubric_no_refusal': 1.0, 'rubric_not_contains_As an AI': 1.0, 'rubric_score': 1.0, 'composite': 1.0}","{'text': 'Researchers developed a solar cell technique reducing costs by 40% with 24.1% efficiency, expected commercialization in 3 years.'}",
+summarizer_demo,claude-haiku-4-5-20251001,anthropic,zero_shot,tech,"Summarize the following text:
+
+Researchers developed a solar cell technique reducing costs by 40% with 24.1% efficiency, expected commercialization in 3 years.","# Summary
+
+Researchers have created an improved solar cell technology that:
+
+- **Reduces costs** by 40%
+- **Achieves 24.1% efficiency** (a strong performance level)
+- **Timeline**: Expected to be commercially available within 3 years
+
+This advancement makes solar energy more affordable and practical for widespread adoption.",3.712,46,76,"{'rubric_word_limit_80': 1.0, 'rubric_no_refusal': 1.0, 'rubric_not_contains_As an AI': 1.0, 'rubric_score': 1.0, 'composite': 1.0}","{'text': 'Researchers developed a solar cell technique reducing costs by 40% with 24.1% efficiency, expected commercialization in 3 years.'}",
+summarizer_demo,gpt-4o-mini,openai,zero_shot,biz,"Summarize the following text:
+
+Global smartphone shipments fell 5.7% in Q3 due to weak demand in China and Europe. Apple led premium segment, Samsung led overall market.","Global smartphone shipments declined by 5.7% in Q3, driven by weak demand in China and Europe. Apple dominated the premium segment, while Samsung led the overall market.",1.362,45,36,"{'rubric_word_limit_80': 1.0, 'rubric_no_refusal': 1.0, 'rubric_not_contains_As an AI': 1.0, 'rubric_score': 1.0, 'composite': 1.0}","{'text': 'Global smartphone shipments fell 5.7% in Q3 due to weak demand in China and Europe. Apple led premium segment, Samsung led overall market.'}",
+summarizer_demo,claude-haiku-4-5-20251001,anthropic,zero_shot,biz,"Summarize the following text:
+
+Global smartphone shipments fell 5.7% in Q3 due to weak demand in China and Europe. Apple led premium segment, Samsung led overall market.","# Summary
+
+Global smartphone shipments declined 5.7% in Q3, driven by weak demand in China and Europe. Apple dominated the premium market segment, while Samsung maintained the overall market leadership position.",1.125,48,45,"{'rubric_word_limit_80': 1.0, 'rubric_no_refusal': 1.0, 'rubric_not_contains_As an AI': 1.0, 'rubric_score': 1.0, 'composite': 1.0}","{'text': 'Global smartphone shipments fell 5.7% in Q3 due to weak demand in China and Europe. Apple led premium segment, Samsung led overall market.'}",
+summarizer_demo,gpt-4o-mini,openai,instructed,tech,"Summarize the following in 2-3 sentences. Be concise.
+
+Researchers developed a solar cell technique reducing costs by 40% with 24.1% efficiency, expected commercialization in 3 years.",Researchers have created a solar cell technique that lowers production costs by 40% while achieving an efficiency of 24.1%. This innovation is anticipated to be commercialized within three years.,1.47,49,37,"{'rubric_word_limit_80': 1.0, 'rubric_no_refusal': 1.0, 'rubric_not_contains_As an AI': 1.0, 'rubric_score': 1.0, 'composite': 1.0}","{'text': 'Researchers developed a solar cell technique reducing costs by 40% with 24.1% efficiency, expected commercialization in 3 years.'}",
+summarizer_demo,claude-haiku-4-5-20251001,anthropic,instructed,tech,"Summarize the following in 2-3 sentences. Be concise.
+
+Researchers developed a solar cell technique reducing costs by 40% with 24.1% efficiency, expected commercialization in 3 years.",Researchers have created a new solar cell technique that cuts production costs by 40% while achieving 24.1% efficiency. The technology is expected to reach commercial markets within three years.,0.997,56,41,"{'rubric_word_limit_80': 1.0, 'rubric_no_refusal': 1.0, 'rubric_not_contains_As an AI': 1.0, 'rubric_score': 1.0, 'composite': 1.0}","{'text': 'Researchers developed a solar cell technique reducing costs by 40% with 24.1% efficiency, expected commercialization in 3 years.'}",
+summarizer_demo,gpt-4o-mini,openai,instructed,biz,"Summarize the following in 2-3 sentences. Be concise.
+
+Global smartphone shipments fell 5.7% in Q3 due to weak demand in China and Europe. Apple led premium segment, Samsung led overall market.","Global smartphone shipments declined by 5.7% in Q3, driven by weak demand in China and Europe. Apple dominated the premium segment, while Samsung led the overall market.",1.21,53,36,"{'rubric_word_limit_80': 1.0, 'rubric_no_refusal': 1.0, 'rubric_not_contains_As an AI': 1.0, 'rubric_score': 1.0, 'composite': 1.0}","{'text': 'Global smartphone shipments fell 5.7% in Q3 due to weak demand in China and Europe. Apple led premium segment, Samsung led overall market.'}",
+summarizer_demo,claude-haiku-4-5-20251001,anthropic,instructed,biz,"Summarize the following in 2-3 sentences. Be concise.
+
+Global smartphone shipments fell 5.7% in Q3 due to weak demand in China and Europe. Apple led premium segment, Samsung led overall market.","Global smartphone shipments declined 5.7% in Q3, driven by weak demand in China and Europe. Apple dominated the premium market while Samsung maintained overall market leadership.",0.893,58,38,"{'rubric_word_limit_80': 1.0, 'rubric_no_refusal': 1.0, 'rubric_not_contains_As an AI': 1.0, 'rubric_score': 1.0, 'composite': 1.0}","{'text': 'Global smartphone shipments fell 5.7% in Q3 due to weak demand in China and Europe. Apple led premium segment, Samsung led overall market.'}",
+summarizer_demo,gpt-4o-mini,openai,role_based,tech,"You are a professional editor. Summarize in 2-3 clear sentences.
+
+Researchers developed a solar cell technique reducing costs by 40% with 24.1% efficiency, expected commercialization in 3 years.",Researchers have created a new solar cell technique that lowers production costs by 40% while achieving an efficiency of 24.1%. This innovative approach is anticipated to be commercialized within the next three years.,1.135,51,41,"{'rubric_word_limit_80': 1.0, 'rubric_no_refusal': 1.0, 'rubric_not_contains_As an AI': 1.0, 'rubric_score': 1.0, 'composite': 1.0}","{'text': 'Researchers developed a solar cell technique reducing costs by 40% with 24.1% efficiency, expected commercialization in 3 years.'}",
+summarizer_demo,claude-haiku-4-5-20251001,anthropic,role_based,tech,"You are a professional editor. Summarize in 2-3 clear sentences.
+
+Researchers developed a solar cell technique reducing costs by 40% with 24.1% efficiency, expected commercialization in 3 years.","# Summary
+
+Researchers have developed an innovative solar cell technique that achieves 24.1% efficiency while reducing production costs by 40%, making solar energy more economically viable. The technology is expected to reach commercial markets within three years, potentially accelerating the adoption of affordable solar power.",1.41,57,62,"{'rubric_word_limit_80': 1.0, 'rubric_no_refusal': 1.0, 'rubric_not_contains_As an AI': 1.0, 'rubric_score': 1.0, 'composite': 1.0}","{'text': 'Researchers developed a solar cell technique reducing costs by 40% with 24.1% efficiency, expected commercialization in 3 years.'}",
+summarizer_demo,gpt-4o-mini,openai,role_based,biz,"You are a professional editor. Summarize in 2-3 clear sentences.
+
+Global smartphone shipments fell 5.7% in Q3 due to weak demand in China and Europe. Apple led premium segment, Samsung led overall market.","Global smartphone shipments declined by 5.7% in Q3, primarily due to weak demand in China and Europe. Apple dominated the premium segment, while Samsung maintained its leadership in the overall market.",1.653,55,40,"{'rubric_word_limit_80': 1.0, 'rubric_no_refusal': 1.0, 'rubric_not_contains_As an AI': 1.0, 'rubric_score': 1.0, 'composite': 1.0}","{'text': 'Global smartphone shipments fell 5.7% in Q3 due to weak demand in China and Europe. Apple led premium segment, Samsung led overall market.'}",
+summarizer_demo,claude-haiku-4-5-20251001,anthropic,role_based,biz,"You are a professional editor. Summarize in 2-3 clear sentences.
+
+Global smartphone shipments fell 5.7% in Q3 due to weak demand in China and Europe. Apple led premium segment, Samsung led overall market.","# Summary
+
+Global smartphone shipments declined 5.7% in Q3, driven by weak demand in China and Europe. Apple dominated the premium market segment while Samsung maintained overall market leadership.",1.21,59,42,"{'rubric_word_limit_80': 1.0, 'rubric_no_refusal': 1.0, 'rubric_not_contains_As an AI': 1.0, 'rubric_score': 1.0, 'composite': 1.0}","{'text': 'Global smartphone shipments fell 5.7% in Q3 due to weak demand in China and Europe. Apple led premium segment, Samsung led overall market.'}",

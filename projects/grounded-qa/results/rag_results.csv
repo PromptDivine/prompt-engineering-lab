@@ -1,0 +1,83 @@
+question_id,question,model,retrieved_sources,source_correct,expected_source,output,latency_s
+R01,What are the penalties for violating the EU AI Act?,GPT-4o-mini,"['eu_ai_act', 'eu_ai_act', 'eu_ai_act']",True,eu_ai_act,"The penalties for violating the EU AI Act include fines of up to 35 million euros or 7 percent of global annual turnover for violations involving prohibited AI practices, whichever is higher. High-risk violations carry fines up to 15 million euros or 3 percent of turnover. Additionally, providing incorrect information to authorities can trigger fines up to 7.5 million euros or 1.5 percent of turnover. (Source: eu_ai_act)",2.611
+R01,What are the penalties for violating the EU AI Act?,GPT-4o,"['eu_ai_act', 'eu_ai_act', 'eu_ai_act']",True,eu_ai_act,"Violations involving prohibited AI practices under the EU AI Act can result in fines of up to 35 million euros or 7 percent of global annual turnover, whichever is higher. High-risk violations carry fines up to 15 million euros or 3 percent of turnover. Providing incorrect information to authorities can trigger fines up to 7.5 million euros or 1.5 percent of turnover. [Source 2: eu_ai_act]",1.346
+R01,What are the penalties for violating the EU AI Act?,Claude Haiku,"['eu_ai_act', 'eu_ai_act', 'eu_ai_act']",True,eu_ai_act,"According to [Source 2 and Source 3: eu_ai_act], the penalties for violating the EU AI Act are:
+
+1. **Prohibited AI practices violations**: Fines up to 35 million euros or 7 percent of global annual turnover, whichever is higher.
+
+2. **High-risk AI violations**: Fines up to 15 million euros or 3 percent of turnover.
+
+3. **Providing incorrect information to authorities**: Fines up to 7.5 million euros or 1.5 percent of turnover.",2.286
+R01,What are the penalties for violating the EU AI Act?,Claude Sonnet 4.6,"['eu_ai_act', 'eu_ai_act', 'eu_ai_act']",True,eu_ai_act,"## Penalties for Violating the EU AI Act
+
+According to the retrieved documents, the EU AI Act establishes a tiered penalty structure based on the type of violation:
+
+1. **Prohibited AI practices (unacceptable risk violations):** Fines of up to **€35 million or 7% of global annual turnover**, whichever is higher.
+
+2. **High-risk AI violations:** Fines of up to **€15 million or 3% of global annual turnover**, whichever is higher.
+
+3. **Providing incorrect information to authorities:** Fines of up to **€7.5 million or 1.5% of global annual turnover**, whichever is higher.
+
+*[Source 2 & Source 3: eu_ai_act]*",3.69
+R01,What are the penalties for violating the EU AI Act?,Mistral small creative,"['eu_ai_act', 'eu_ai_act', 'eu_ai_act']",True,eu_ai_act,"The penalties for violating the **EU AI Act** are as follows:
+
+- **Prohibited AI practices** (e.g., unacceptable risk systems like real-time biometric surveillance or social scoring) can result in fines of **up to 35 million euros or 7% of global annual turnover**, whichever is higher.
+- **High-risk violations** (e.g., non-compliance with obligations for high-risk AI systems) carry fines of **up to 15 million euros or 3% of turnover**.
+- **Providing incorrect information to authorities** can trigger fines of **up to 7.5 million euros or 1.5% of turnover**.
+
+*(Sources: [Source 2: eu_ai_act], [Source 3: eu_ai_act])*",1.602
+R01,What are the penalties for violating the EU AI Act?,Llama 3 8B,"['eu_ai_act', 'eu_ai_act', 'eu_ai_act']",True,eu_ai_act,"Violations involving prohibited AI practices can result in fines of up to 35 million euros or 7 percent of global annual turnover, whichever is higher. High-risk violations carry fines up to 15 million euros or 3 percent of turnover. Providing incorrect information to authorities can trigger fines up to 7.5 million euros or 1.5 percent of turnover. (Source: eu_ai_act)",1.393
+R02,How does the energy density of sodium-ion batteries compare to lithium-ion?,GPT-4o-mini,"['sodium_battery', 'sodium_battery', 'sodium_battery']",True,sodium_battery,"The energy density of sodium-ion batteries is approximately 20 percent lower than that of current lithium-ion batteries, which have an energy density of 285 watt-hours per kilogram for the sodium-ion batteries. This information is sourced from Energy Technology Weekly (Source 1).",1.838
+R02,How does the energy density of sodium-ion batteries compare to lithium-ion?,GPT-4o,"['sodium_battery', 'sodium_battery', 'sodium_battery']",True,sodium_battery,The energy density of sodium-ion batteries is approximately 20 percent lower than current lithium-ion batteries. [Source 1: sodium_battery],0.647
+R02,How does the energy density of sodium-ion batteries compare to lithium-ion?,Claude Haiku,"['sodium_battery', 'sodium_battery', 'sodium_battery']",True,sodium_battery,"According to the retrieved context, sodium-ion batteries have an energy density of 285 watt-hours per kilogram, which is approximately **20 percent lower than current lithium-ion batteries** [Source 1: sodium_battery]. However, this lower energy density is achieved at roughly 40 percent lower manufacturing cost.",1.629
+R02,How does the energy density of sodium-ion batteries compare to lithium-ion?,Claude Sonnet 4.6,"['sodium_battery', 'sodium_battery', 'sodium_battery']",True,sodium_battery,"Based on the retrieved context, the sodium-ion batteries developed by MIT demonstrated an energy density of **285 watt-hours per kilogram**, which is approximately **20 percent lower** than current lithium-ion batteries. However, this comes with a notable trade-off advantage: the sodium-ion batteries are achieved at roughly **40 percent lower manufacturing cost**.
+
+**Source: Source 1 (sodium_battery, Energy Technology Weekly, 2024-02-08)**",3.215
+R02,How does the energy density of sodium-ion batteries compare to lithium-ion?,Mistral small creative,"['sodium_battery', 'sodium_battery', 'sodium_battery']",True,sodium_battery,"The energy density of the sodium-ion batteries developed by MIT is **approximately 20 percent lower** than current lithium-ion batteries, at **285 watt-hours per kilogram**.
+
+**Source:** [Source 1: sodium_battery]",1.043
+R02,How does the energy density of sodium-ion batteries compare to lithium-ion?,Llama 3 8B,"['sodium_battery', 'sodium_battery', 'sodium_battery']",True,sodium_battery,"According to the retrieved context, the energy density of sodium-ion batteries is approximately 20 percent lower than current lithium-ion batteries, but achieved at roughly 40 percent lower manufacturing cost. (Source: [Source 1: sodium_battery])",1.224
+R03,How many hectares of forest burned in Canada during 2023?,GPT-4o-mini,"['climate_2023', 'climate_2023', 'sodium_battery']",True,climate_2023,More than 18 million hectares of forest burned in Canada during 2023 (Source 1: climate_2023).,1.6
+R03,How many hectares of forest burned in Canada during 2023?,GPT-4o,"['climate_2023', 'climate_2023', 'sodium_battery']",True,climate_2023,More than 18 million hectares of forest burned in Canada during 2023. [Source 1: climate_2023],0.97
+R03,How many hectares of forest burned in Canada during 2023?,Claude Haiku,"['climate_2023', 'climate_2023', 'sodium_battery']",True,climate_2023,"According to the retrieved context, Canada experienced its worst wildfire season on record in 2023, destroying more than 18 million hectares of forest — more than double the previous record set in 1995. [Source 2: climate_2023]",1.281
+R03,How many hectares of forest burned in Canada during 2023?,Claude Sonnet 4.6,"['climate_2023', 'climate_2023', 'sodium_battery']",True,climate_2023,"According to the retrieved context, Canada's worst wildfire season on record in 2023 destroyed **more than 18 million hectares** of forest — more than double the previous record set in 1995.
+
+**Source: [Source 1 & 2: climate_2023]**, Climate Research Digest, dated 2024-01-15.",2.607
+R03,How many hectares of forest burned in Canada during 2023?,Mistral small creative,"['climate_2023', 'climate_2023', 'sodium_battery']",True,climate_2023,"In 2023, **more than 18 million hectares of forest burned in Canada**, according to the record wildfire season.
+
+**Source:** [Source 2: climate_2023]",0.895
+R03,How many hectares of forest burned in Canada during 2023?,Llama 3 8B,"['climate_2023', 'climate_2023', 'sodium_battery']",True,climate_2023,"According to the retrieved context, more than 18 million hectares of forest burned in Canada during 2023. (Source: [Source 1: climate_2023] and [Source 2: climate_2023])",1.196
+R04,What computational threshold triggers extra obligations under the EU AI Act?,GPT-4o-mini,"['eu_ai_act', 'eu_ai_act', 'eu_ai_act']",True,eu_ai_act,"The computational threshold that triggers extra obligations under the EU AI Act is 10^25 FLOPs. This applies to the most powerful general-purpose AI models, which must conduct adversarial testing and report serious incidents to the European AI Office. (Source 2)",2.08
+R04,What computational threshold triggers extra obligations under the EU AI Act?,GPT-4o,"['eu_ai_act', 'eu_ai_act', 'eu_ai_act']",True,eu_ai_act,The computational threshold that triggers extra obligations under the EU AI Act is 10^25 FLOPs. [Source 2: eu_ai_act],0.977
+R04,What computational threshold triggers extra obligations under the EU AI Act?,Claude Haiku,"['eu_ai_act', 'eu_ai_act', 'eu_ai_act']",True,eu_ai_act,"According to the retrieved context, the computational threshold that triggers extra obligations under the EU AI Act is **10^25 FLOPs** (floating point operations).
+
+For general-purpose AI models, including large language models, that exceed this computational threshold, providers must conduct adversarial testing and report serious incidents to the European AI Office, in addition to other transparency requirements like publishing summaries of training data and complying with EU copyright law.
+
+[Source: Source 2, eu_ai_act]",5.459
+R04,What computational threshold triggers extra obligations under the EU AI Act?,Claude Sonnet 4.6,"['eu_ai_act', 'eu_ai_act', 'eu_ai_act']",True,eu_ai_act,"Based on the retrieved context, the computational threshold that triggers extra obligations under the EU AI Act is **10^25 FLOPs**. General-purpose AI models (such as large language models) that exceed this threshold must conduct adversarial testing and report serious incidents to the European AI Office, in addition to the standard transparency requirements.
+
+**Source: [Source 2: eu_ai_act]**",2.569
+R04,What computational threshold triggers extra obligations under the EU AI Act?,Mistral small creative,"['eu_ai_act', 'eu_ai_act', 'eu_ai_act']",True,eu_ai_act,"The computational threshold that triggers extra obligations under the EU AI Act is **10^25 FLOPs (floating-point operations per second)** for the most powerful general-purpose AI models.
+
+**Source:** [Source 2: eu_ai_act]",1.01
+R04,What computational threshold triggers extra obligations under the EU AI Act?,Llama 3 8B,"['eu_ai_act', 'eu_ai_act', 'eu_ai_act']",True,eu_ai_act,"Answer: The computational threshold of 10^25 FLOPs triggers extra obligations under the EU AI Act, specifically requiring adversarial testing and reporting serious incidents to the European AI Office. (Source: [Source 2: eu_ai_act])",1.402
+R05,Who leads the MIT sodium battery research team?,GPT-4o-mini,"['sodium_battery', 'sodium_battery', 'sodium_battery']",True,sodium_battery,Professor Elena Vasquez leads the MIT sodium battery research team. [Source 1: sodium_battery],1.46
+R05,Who leads the MIT sodium battery research team?,GPT-4o,"['sodium_battery', 'sodium_battery', 'sodium_battery']",True,sodium_battery,Not found in retrieved documents.,0.656
+R05,Who leads the MIT sodium battery research team?,Claude Haiku,"['sodium_battery', 'sodium_battery', 'sodium_battery']",True,sodium_battery,"According to Source 1, the research team is led by **Professor Elena Vasquez**. However, I should note that Source 2 identifies the research location as MIT but does not name the team leader, while Source 1 provides the name of the leader but does not explicitly state the institution affiliation in the excerpt provided.",1.946
+R05,Who leads the MIT sodium battery research team?,Claude Sonnet 4.6,"['sodium_battery', 'sodium_battery', 'sodium_battery']",True,sodium_battery,"Based on the retrieved context, the MIT sodium battery research team is led by **Professor Elena Vasquez**, who has filed patents on the cathode synthesis process and is in discussions with three battery manufacturers about licensing the technology.
+
+**Source: Source 1 (sodium_battery)**",2.247
+R05,Who leads the MIT sodium battery research team?,Mistral small creative,"['sodium_battery', 'sodium_battery', 'sodium_battery']",True,sodium_battery,Not found in retrieved documents.,0.959
+R05,Who leads the MIT sodium battery research team?,Llama 3 8B,"['sodium_battery', 'sodium_battery', 'sodium_battery']",True,sodium_battery,Not found in retrieved documents.,0.623
+R06,What was the average sea surface temperature anomaly in 2023?,GPT-4o-mini,"['climate_2023', 'climate_2023', 'sodium_battery']",True,climate_2023,The average sea surface temperature anomaly in 2023 was 0.9 degrees Celsius above the 1982-2011 baseline. This information is sourced from [Source 2: climate_2023].,1.649
+R06,What was the average sea surface temperature anomaly in 2023?,GPT-4o,"['climate_2023', 'climate_2023', 'sodium_battery']",True,climate_2023,The average sea surface temperature anomaly in 2023 was 0.9 degrees Celsius above the 1982-2011 baseline. [Source 2: climate_2023],1.07
+R06,What was the average sea surface temperature anomaly in 2023?,Claude Haiku,"['climate_2023', 'climate_2023', 'sodium_battery']",True,climate_2023,"According to Source 2 (climate_2023), sea surface temperatures in 2023 hit unprecedented highs, averaging 0.9 degrees Celsius above the 1982-2011 baseline.",1.233
+R06,What was the average sea surface temperature anomaly in 2023?,Claude Sonnet 4.6,"['climate_2023', 'climate_2023', 'sodium_battery']",True,climate_2023,"Based on the retrieved context, the average sea surface temperature anomaly in 2023 was **0.9 degrees Celsius above the 1982-2011 baseline**.
+
+[Source: climate_2023]",1.885
+R06,What was the average sea surface temperature anomaly in 2023?,Mistral small creative,"['climate_2023', 'climate_2023', 'sodium_battery']",True,climate_2023,"The average sea surface temperature anomaly in 2023 was **0.9 degrees Celsius above the 1982–2011 baseline**.
+
+**Source:** [Source 2: climate_2023]",1.048
+R06,What was the average sea surface temperature anomaly in 2023?,Llama 3 8B,"['climate_2023', 'climate_2023', 'sodium_battery']",True,climate_2023,"According to the retrieved context, the answer is:
+
+0.9 degrees Celsius above the 1982-2011 baseline (Source 2: climate_2023)",1.066

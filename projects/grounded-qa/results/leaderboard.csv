@@ -1,0 +1,25 @@
+rank,model,condition,factual_accuracy,grounding_rate,hallucination_flag,latency_s,hallucination_rate
+1,Claude Sonnet 4.6,OVERALL,0.8095,0.7905,0.2095,3.4471,0.21
+2,Claude Haiku,OVERALL,0.8,0.8476,0.1524,1.8066,0.152
+3,GPT-4o-mini,OVERALL,0.7905,0.781,0.219,2.0306,0.219
+4,GPT-4o,OVERALL,0.781,0.8286,0.1714,1.1054,0.171
+5,Mistral small creative,OVERALL,0.7714,0.7429,0.2571,2.5072,0.257
+6,Llama 3 8B,OVERALL,0.7667,0.8,0.2,1.6439,0.2
+7,Claude Haiku,cited,0.8667,0.8667,0.1333,1.615,0.133
+8,Claude Sonnet 4.6,cited,0.8444,0.8444,0.1556,2.2948,0.156
+9,GPT-4o,cited,0.8222,0.8222,0.1778,1.0224,0.178
+10,GPT-4o-mini,cited,0.8,0.8,0.2,1.769,0.2
+11,Llama 3 8B,cited,0.8,0.8,0.2,1.4777,0.2
+12,Mistral small creative,cited,0.7667,0.7778,0.2222,1.2269,0.222
+13,Claude Haiku,grounded,0.9556,0.9556,0.0444,1.6428,0.044
+14,GPT-4o-mini,grounded,0.9556,0.9556,0.0444,1.8877,0.044
+15,Claude Sonnet 4.6,grounded,0.9333,0.9333,0.0667,2.78,0.067
+16,GPT-4o,grounded,0.9222,0.9778,0.0222,0.9745,0.022
+17,Llama 3 8B,grounded,0.9111,0.9111,0.0889,1.4367,0.089
+18,Mistral small creative,grounded,0.8889,0.9556,0.0444,2.1517,0.044
+19,Mistral small creative,ungrounded,0.4333,0.0,1.0,7.4147,1.0
+20,Claude Sonnet 4.6,ungrounded,0.3333,0.2,0.8,8.9051,0.8
+21,GPT-4o-mini,ungrounded,0.2667,0.2,0.8,3.2441,0.8
+22,GPT-4o,ungrounded,0.2333,0.4,0.6,1.7473,0.6
+23,Llama 3 8B,ungrounded,0.2333,0.4667,0.5333,2.7639,0.533
+24,Claude Haiku,ungrounded,0.1333,0.4667,0.5333,2.8732,0.533

@@ -1,0 +1,44 @@
+model,condition,hallucination_type,count,total,pct
+Claude Haiku,grounded,NONE,43,105,41.0
+Claude Haiku,cited,NONE,39,105,37.1
+Claude Haiku,ungrounded,NONE,7,105,6.7
+Claude Haiku,cited,CONTEXT_LEAK,6,105,5.7
+Claude Haiku,ungrounded,CONTEXT_LEAK,5,105,4.8
+Claude Haiku,ungrounded,FABRICATED_FACT,3,105,2.9
+Claude Haiku,grounded,CONTEXT_LEAK,2,105,1.9
+Claude Sonnet 4.6,grounded,NONE,42,105,40.0
+Claude Sonnet 4.6,cited,NONE,38,105,36.2
+Claude Sonnet 4.6,cited,CONTEXT_LEAK,7,105,6.7
+Claude Sonnet 4.6,ungrounded,FABRICATED_FACT,7,105,6.7
+Claude Sonnet 4.6,ungrounded,CONTEXT_LEAK,5,105,4.8
+Claude Sonnet 4.6,grounded,CONTEXT_LEAK,3,105,2.9
+Claude Sonnet 4.6,ungrounded,NONE,3,105,2.9
+GPT-4o,grounded,NONE,44,105,41.9
+GPT-4o,cited,NONE,37,105,35.2
+GPT-4o,cited,CONTEXT_LEAK,8,105,7.6
+GPT-4o,ungrounded,NONE,6,105,5.7
+GPT-4o,ungrounded,CONTEXT_LEAK,5,105,4.8
+GPT-4o,ungrounded,FABRICATED_FACT,4,105,3.8
+GPT-4o,grounded,CONTEXT_LEAK,1,105,1.0
+GPT-4o-mini,grounded,NONE,43,105,41.0
+GPT-4o-mini,cited,NONE,36,105,34.3
+GPT-4o-mini,cited,CONTEXT_LEAK,9,105,8.6
+GPT-4o-mini,ungrounded,FABRICATED_FACT,7,105,6.7
+GPT-4o-mini,ungrounded,CONTEXT_LEAK,5,105,4.8
+GPT-4o-mini,ungrounded,NONE,3,105,2.9
+GPT-4o-mini,grounded,CONTEXT_LEAK,2,105,1.9
+Llama 3 8B,grounded,NONE,41,105,39.0
+Llama 3 8B,cited,NONE,36,105,34.3
+Llama 3 8B,cited,CONTEXT_LEAK,8,105,7.6
+Llama 3 8B,ungrounded,NONE,7,105,6.7
+Llama 3 8B,grounded,CONTEXT_LEAK,4,105,3.8
+Llama 3 8B,ungrounded,CONTEXT_LEAK,4,105,3.8
+Llama 3 8B,ungrounded,FABRICATED_FACT,4,105,3.8
+Llama 3 8B,cited,FABRICATED_FACT,1,105,1.0
+Mistral small creative,grounded,NONE,43,105,41.0
+Mistral small creative,cited,NONE,35,105,33.3
+Mistral small creative,ungrounded,FABRICATED_FACT,10,105,9.5
+Mistral small creative,cited,CONTEXT_LEAK,8,105,7.6
+Mistral small creative,ungrounded,CONTEXT_LEAK,5,105,4.8
+Mistral small creative,cited,FABRICATED_FACT,2,105,1.9
+Mistral small creative,grounded,CONTEXT_LEAK,2,105,1.9

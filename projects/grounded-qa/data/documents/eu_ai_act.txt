@@ -1,0 +1,17 @@
+TITLE: The EU AI Act: What Businesses Need to Know
+SOURCE: Technology Policy Review
+DATE: 2024-03-20
+
+The European Union's Artificial Intelligence Act entered into force on August 1, 2024, making it the world's first comprehensive legal framework for artificial intelligence. The regulation takes a risk-based approach, categorizing AI systems into four tiers: unacceptable risk, high risk, limited risk, and minimal risk.
+
+AI systems classified as unacceptable risk are banned outright. This category includes real-time biometric surveillance in public spaces by law enforcement (with narrow exceptions), social scoring systems by governments, and AI that manipulates people through subliminal techniques. These prohibitions took effect six months after the Act entered into force, in February 2025.
+
+High-risk AI systems — including those used in critical infrastructure, education, employment, essential services, law enforcement, and border management — face strict obligations. Developers must conduct conformity assessments, maintain technical documentation, implement human oversight mechanisms, and register their systems in an EU database. Compliance is required by August 2026.
+
+General-purpose AI models, including large language models, face transparency requirements. Providers must publish summaries of training data, comply with EU copyright law, and — for the most powerful models above a computational threshold of 10^25 FLOPs — conduct adversarial testing and report serious incidents to the European AI Office.
+
+Penalties for non-compliance are substantial. Violations involving prohibited AI practices can result in fines of up to 35 million euros or 7 percent of global annual turnover, whichever is higher. High-risk violations carry fines up to 15 million euros or 3 percent of turnover. Providing incorrect information to authorities can trigger fines up to 7.5 million euros or 1.5 percent of turnover.
+
+The European AI Office, established within the European Commission, is responsible for overseeing the regulation's implementation, particularly for general-purpose AI models. Member states must designate national competent authorities by August 2025.
+
+Small and medium-sized enterprises receive some accommodations, including reduced fees for conformity assessments and priority access to regulatory sandboxes where they can test AI systems in controlled environments before market release.

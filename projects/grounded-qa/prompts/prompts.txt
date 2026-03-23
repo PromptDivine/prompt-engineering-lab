@@ -1,0 +1,138 @@
+# ============================================================
+# GROUNDED QA — Prompt Library
+# Project: P5 · prompt-engineering-lab
+#
+# Three conditions per question:
+#   UNGROUNDED  — model answers from training data alone (baseline)
+#   GROUNDED    — model given context, must stay grounded
+#   CITED       — model must cite specific passage supporting answer
+#
+# Variable: {{question}}, {{context}}
+# ============================================================
+
+
+# ────────────────────────────────────────────
+# CONDITION 1 — UNGROUNDED (no context given)
+# ────────────────────────────────────────────
+
+[UG01] ungrounded_direct
+condition: ungrounded
+strategy: no_context
+---
+Answer the following question based on your knowledge:
+
+Question: {{question}}
+
+Answer:
+
+
+# ────────────────────────────────────────────
+# CONDITION 2 — GROUNDED (context provided)
+# ────────────────────────────────────────────
+
+[GR01] grounded_basic
+condition: grounded
+strategy: basic_grounding
+---
+Use ONLY the following context to answer the question.
+If the answer is not in the context, say exactly: "The provided context does not contain enough information to answer this question."
+Do not use any outside knowledge.
+
+Context:
+{{context}}
+
+Question: {{question}}
+
+Answer:
+
+
+[GR02] grounded_strict
+condition: grounded
+strategy: strict_grounding
+---
+You are a precise question-answering system. Your only source of truth is the context below.
+
+RULES:
+- Answer using ONLY information explicitly stated in the context
+- If the context does not contain the answer, respond: "Not answerable from context"
+- Do not infer, extrapolate, or use outside knowledge
+- Keep your answer to 1-2 sentences
+
+Context:
+{{context}}
+
+Question: {{question}}
+
+Answer:
+
+
+[GR03] grounded_cot
+condition: grounded
+strategy: chain_of_thought_grounding
+---
+Answer the question using only the provided context. Think step by step.
+
+Context:
+{{context}}
+
+Question: {{question}}
+
+Step 1 — Find the relevant sentence(s) in the context:
+Step 2 — Determine if the question is directly answerable:
+Step 3 — Final answer (or state "Not in context" if unanswerable):
+
+
+# ────────────────────────────────────────────
+# CONDITION 3 — CITED (must quote source)
+# ────────────────────────────────────────────
+
+[CT01] cited_basic
+condition: cited
+strategy: citation_required
+---
+Answer the question using ONLY the context below.
+You MUST include a direct quote from the context that supports your answer.
+Format your response as:
+ANSWER: [your answer]
+QUOTE: "[exact quote from context]"
+If the answer is not in the context, respond:
+ANSWER: Not answerable from context
+QUOTE: N/A
+
+Context:
+{{context}}
+
+Question: {{question}}
+
+
+[CT02] cited_structured
+condition: cited
+strategy: structured_citation
+---
+You are a research assistant that always cites sources.
+Using ONLY the context provided, answer the question with full citation.
+
+Context:
+{{context}}
+
+Question: {{question}}
+
+Respond in this exact format:
+ANSWER: [1-2 sentence answer]
+EVIDENCE: "[direct quote from context supporting the answer]"
+CONFIDENCE: [HIGH if answer is explicit / LOW if inferred / NONE if not in context]
+
+
+[CT03] cited_academic
+condition: cited
+strategy: academic_citation
+---
+Provide a grounded answer with citation. If the information is not present
+in the context, explicitly state that it cannot be answered from the given source.
+
+Context passage:
+{{context}}
+
+Question: {{question}}
+
+Response (answer with inline citation in parentheses):

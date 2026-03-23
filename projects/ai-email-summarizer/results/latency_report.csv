@@ -1,0 +1,31 @@
+model,strategy,latency_s,rouge1,tone_preservation,quality_per_second
+GPT-4o,tldr,1.4011,0.4292,0.4252,0.3063
+Gemini 2.0 Flash,tldr,1.5366,0.4659,0.4492,0.3032
+Llama 3 8B,tldr,1.3884,0.3932,0.4319,0.2832
+Gemini 2.0 Flash,formal_paragraph,1.74,0.4115,0.4179,0.2365
+Gemini 2.0 Flash,bullets,2.0371,0.4532,0.4377,0.2225
+GPT-4o,casual,1.8888,0.3987,0.4339,0.2111
+GPT-4o,bullets,2.1923,0.46,0.4623,0.2098
+GPT-4o,tone_matched,2.1067,0.4365,0.7788,0.2072
+GPT-4o,formal_paragraph,2.3675,0.4409,0.4297,0.1862
+Gemini 2.0 Flash,tone_matched,2.3185,0.427,0.7272,0.1842
+Gemini 2.0 Flash,casual,1.8574,0.3229,0.4638,0.1738
+GPT-4o-mini,tldr,2.4595,0.4147,0.43,0.1686
+Llama 3 8B,formal_paragraph,2.2357,0.365,0.4745,0.1633
+Claude Sonnet 4.6,tldr,3.2854,0.5213,0.402,0.1587
+Claude Haiku,bullets,2.977,0.4695,0.4873,0.1577
+Llama 3 8B,bullets,2.5818,0.3846,0.4446,0.149
+Llama 3 8B,casual,2.5135,0.351,0.504,0.1396
+Llama 3 8B,tone_matched,2.7823,0.3851,0.7478,0.1384
+Claude Haiku,formal_paragraph,3.1933,0.4126,0.4287,0.1292
+GPT-4o-mini,bullets,3.3607,0.4313,0.462,0.1283
+Claude Haiku,tone_matched,3.2735,0.4127,0.7165,0.1261
+GPT-4o-mini,casual,2.9348,0.3631,0.468,0.1237
+GPT-4o-mini,formal_paragraph,3.2922,0.4034,0.4137,0.1225
+GPT-4o-mini,tone_matched,3.4899,0.394,0.8984,0.1129
+Claude Haiku,casual,3.1863,0.3453,0.4262,0.1084
+Claude Haiku,tldr,4.9612,0.4874,0.442,0.0982
+Claude Sonnet 4.6,bullets,5.5429,0.4304,0.4491,0.0776
+Claude Sonnet 4.6,tone_matched,5.8013,0.414,0.7902,0.0714
+Claude Sonnet 4.6,formal_paragraph,5.1641,0.3602,0.3688,0.0698
+Claude Sonnet 4.6,casual,5.5222,0.3589,0.4249,0.065

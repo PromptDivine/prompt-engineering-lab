@@ -1,0 +1,249 @@
+# ============================================================
+# EMAIL SUMMARIZER — Prompt Library
+# Project: P6 · prompt-engineering-lab
+#
+# 4 strategies × 3 variants = 12 benchmark prompts
+# Plus 5 tone-matched prompts for tone preservation
+#
+# Variables:
+#   {{email}}    = full email body (single or thread)
+#   {{tone}}     = detected tone (formal/casual/urgent/negative/positive)
+#   {{type}}     = single or thread
+# ============================================================
+
+
+# ────────────────────────────────────────────
+# STRATEGY 1 — TLDR (single sentence)
+# ────────────────────────────────────────────
+
+[TL01] tldr_basic
+strategy: tldr
+expected_length: very_short
+---
+Summarize the following email in one sentence (TL;DR):
+
+{{email}}
+
+TL;DR:
+
+
+[TL02] tldr_structured
+strategy: tldr
+expected_length: very_short
+---
+Write a TL;DR summary of this email. Requirements:
+- One sentence only
+- Start with the most important action or information
+- Include any deadline or urgency if present
+
+Email:
+{{email}}
+
+TL;DR:
+
+
+[TL03] tldr_role
+strategy: tldr
+expected_length: very_short
+---
+You are an executive assistant who specializes in distilling emails to their essence. Write a single-sentence TL;DR that gives a busy executive all they need to know.
+
+Email:
+{{email}}
+
+TL;DR:
+
+
+# ────────────────────────────────────────────
+# STRATEGY 2 — BULLET POINTS
+# ────────────────────────────────────────────
+
+[BL01] bullets_basic
+strategy: bullets
+expected_length: short
+---
+Summarize the following email as 3-5 bullet points. Each bullet should be one sentence.
+
+Email:
+{{email}}
+
+Key points:
+•
+
+
+[BL02] bullets_structured
+strategy: bullets
+expected_length: short
+---
+Extract the key information from this email into bullet points.
+
+Format:
+• WHAT: [what is happening or being requested]
+• WHO: [relevant people involved]
+• WHEN: [any deadlines or timeframes]
+• ACTION: [what the recipient needs to do, if anything]
+• NOTE: [any important caveats] (omit if not applicable)
+
+Email:
+{{email}}
+
+
+[BL03] bullets_role
+strategy: bullets
+expected_length: short
+---
+You are a chief of staff. Summarize this email into concise bullet points that a senior leader can scan in 10 seconds. Prioritize actions and decisions over background context.
+
+Email:
+{{email}}
+
+Key points:
+
+
+# ────────────────────────────────────────────
+# STRATEGY 3 — FORMAL PARAGRAPH
+# ────────────────────────────────────────────
+
+[FP01] formal_basic
+strategy: formal_paragraph
+expected_length: medium
+---
+Write a professional 2-3 sentence summary of the following email. Use formal language suitable for a business report.
+
+Email:
+{{email}}
+
+Summary:
+
+
+[FP02] formal_structured
+strategy: formal_paragraph
+expected_length: medium
+---
+Produce a formal executive summary of this email. The summary should:
+- Be written in third person
+- Cover the main subject, key details, and required actions
+- Be 2-4 sentences in length
+- Use professional business language
+
+Email:
+{{email}}
+
+Executive summary:
+
+
+[FP03] formal_role
+strategy: formal_paragraph
+expected_length: medium
+---
+You are a senior communications professional. Write a concise, formal summary of the email below that could be included in a daily briefing document for senior management. Third person, 2-3 sentences, no jargon.
+
+Email:
+{{email}}
+
+Briefing summary:
+
+
+# ────────────────────────────────────────────
+# STRATEGY 4 — CASUAL / CONVERSATIONAL
+# ────────────────────────────────────────────
+
+[CS01] casual_basic
+strategy: casual
+expected_length: short
+---
+Summarize this email in plain, casual language — like you're telling a friend what it said. 2-3 sentences max.
+
+Email:
+{{email}}
+
+Summary:
+
+
+[CS02] casual_structured
+strategy: casual
+expected_length: short
+---
+Give me the quick version of this email. What's it about, what do I need to do (if anything), and is there a deadline? Keep it conversational and brief.
+
+Email:
+{{email}}
+
+Quick summary:
+
+
+[CS03] casual_role
+strategy: casual
+expected_length: short
+---
+You're a helpful colleague who just read this email. Give me the short version in plain English — what happened, what matters, what I should do. No corporate speak.
+
+Email:
+{{email}}
+
+Here's the gist:
+
+
+# ────────────────────────────────────────────
+# TONE-MATCHED PROMPTS
+# (selected automatically based on detected tone)
+# ────────────────────────────────────────────
+
+[TM_FORMAL] tone_match_formal
+strategy: tone_matched
+target_tone: formal
+---
+Summarize the following formal business email. Maintain a professional and precise tone in your summary. Include key facts, required actions, and any deadlines.
+
+Email:
+{{email}}
+
+Professional summary:
+
+
+[TM_CASUAL] tone_match_casual
+strategy: tone_matched
+target_tone: casual
+---
+This is a casual/informal email. Summarize it in a friendly, conversational tone that matches the original style. 2-3 sentences, keep it relaxed.
+
+Email:
+{{email}}
+
+Casual summary:
+
+
+[TM_URGENT] tone_match_urgent
+strategy: tone_matched
+target_tone: urgent
+---
+This is an urgent email requiring immediate action. Summarize it with urgency intact. Lead with the critical action needed and any hard deadlines. Be direct.
+
+Email:
+{{email}}
+
+URGENT summary:
+
+
+[TM_NEGATIVE] tone_match_negative
+strategy: tone_matched
+target_tone: negative
+---
+This email contains a complaint or negative feedback. Summarize it factually and empathetically, capturing the customer's or sender's concerns accurately without minimizing them.
+
+Email:
+{{email}}
+
+Summary:
+
+
+[TM_POSITIVE] tone_match_positive
+strategy: tone_matched
+target_tone: positive
+---
+This is a positive or celebratory email. Summarize it with matching enthusiasm and warmth, preserving the positive sentiment of the original.
+
+Email:
+{{email}}
+
+Summary:

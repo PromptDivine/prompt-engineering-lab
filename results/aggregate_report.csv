@@ -1,0 +1,37 @@
+project,model,strategy,score,metric,latency_s
+P1_summarization,Claude Sonnet 4.6,zero_shot,0.6485,composite_rouge_bert,3.924
+P1_summarization,Claude Haiku,zero_shot,0.62,composite_rouge_bert,2.8068
+P1_summarization,GPT-4o-mini,constrained_length,0.5825,composite_rouge_bert,2.8988
+P1_summarization,Claude Haiku,constrained_length,0.5759,composite_rouge_bert,1.8534
+P1_summarization,GPT-4o,zero_shot,0.5647,composite_rouge_bert,6.294
+P1_summarization,Claude Haiku,instructed,0.5641,composite_rouge_bert,4.738
+P1_summarization,GPT-4o-mini,zero_shot,0.5621,composite_rouge_bert,5.1975
+P1_summarization,Claude Sonnet 4.6,contrastive_instruction,0.558,composite_rouge_bert,3.7804
+P1_summarization,Claude Haiku,zero_shot,0.5467,composite_rouge_bert,2.8546
+P1_summarization,Claude Sonnet 4.6,structured_output,0.5414,composite_rouge_bert,3.9982
+P1_summarization,GPT-4o,contrastive_instruction,0.5373,composite_rouge_bert,2.8356
+P1_summarization,Claude Sonnet 4.6,structured_extraction,0.5328,composite_rouge_bert,7.4342
+P1_summarization,Claude Haiku,role_prompting + audience_targeting,0.5308,composite_rouge_bert,2.6178
+P1_summarization,Claude Sonnet 4.6,instructed,0.5276,composite_rouge_bert,4.7748
+P1_summarization,GPT-4o-mini,contrastive_instruction,0.5273,composite_rouge_bert,3.0228
+P1_summarization,Claude Sonnet 4.6,zero_shot,0.5267,composite_rouge_bert,5.3636
+P1_summarization,Claude Haiku,contrastive_instruction,0.5265,composite_rouge_bert,2.6006
+P1_summarization,GPT-4o-mini,role_prompting + audience_targeting,0.5253,composite_rouge_bert,4.1456
+P1_summarization,GPT-4o,constrained_length,0.5245,composite_rouge_bert,2.365
+P1_summarization,GPT-4o,role_prompting + audience_targeting,0.5242,composite_rouge_bert,2.5174
+P1_summarization,GPT-4o-mini,structured_output,0.5239,composite_rouge_bert,3.2088
+P1_summarization,Claude Haiku,structured_extraction,0.5196,composite_rouge_bert,3.6598
+P1_summarization,Claude Sonnet 4.6,chain_of_thought,0.5194,composite_rouge_bert,8.0248
+P1_summarization,Claude Haiku,structured_output,0.5185,composite_rouge_bert,2.8674
+P1_summarization,Claude Haiku,chain_of_thought,0.516,composite_rouge_bert,3.9652
+P1_summarization,GPT-4o,zero_shot,0.5108,composite_rouge_bert,3.6806
+P1_summarization,GPT-4o,instructed,0.5106,composite_rouge_bert,4.022
+P1_summarization,Claude Sonnet 4.6,constrained_length,0.5105,composite_rouge_bert,3.0722
+P1_summarization,GPT-4o,structured_output,0.5091,composite_rouge_bert,4.0986
+P1_summarization,GPT-4o-mini,instructed,0.5058,composite_rouge_bert,4.1952
+P1_summarization,Claude Sonnet 4.6,role_prompting + audience_targeting,0.5003,composite_rouge_bert,4.874
+P1_summarization,GPT-4o-mini,zero_shot,0.4926,composite_rouge_bert,4.9212
+P1_summarization,GPT-4o-mini,structured_extraction,0.4922,composite_rouge_bert,4.593
+P1_summarization,GPT-4o,structured_extraction,0.4855,composite_rouge_bert,4.8524
+P1_summarization,GPT-4o,chain_of_thought,0.4559,composite_rouge_bert,6.1088
+P1_summarization,GPT-4o-mini,chain_of_thought,0.4319,composite_rouge_bert,6.673

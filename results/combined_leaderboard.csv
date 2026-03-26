@@ -1,0 +1,5 @@
+model,p1_summarization,overall_avg
+Claude Haiku,0.5464555555555556,0.546
+Claude Sonnet 4.6,0.5405777777777777,0.541
+GPT-4o-mini,0.5159555555555556,0.516
+GPT-4o,0.5136222222222222,0.514

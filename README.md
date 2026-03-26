@@ -86,7 +86,7 @@ Each project folder contains: `README.md` · `experiment.ipynb` · `run_*.py` ·
 - `update_findings.py` pattern: auto-populates README tables from results CSVs
 
 **APIs & Models Benchmarked**
-- GPT-4o, GPT-4o-mini, Claude Sonnet 4.6, Claude Haiku, Mistral small creative, Llama 3 8B, Gemini Flash
+- GPT-4o, GPT-4o-mini, Claude Sonnet 4.6, Claude Haiku, Mistral small creative, Llama 3 8B, Gemini 2.0 Flash
 
 ---
 
@@ -134,7 +134,7 @@ Each project folder contains: `README.md` · `experiment.ipynb` · `run_*.py` ·
 
 **Key features:** `promptlab` package with CLI (`promptlab run`, `promptlab ab`, `promptlab regression`). YAML test file format. Baseline JSON snapshots committed to git.
 
-**Highlights:** The infrastructure layer that powers every other project. Cross-referenced by P1–P3 and extended by P7–P8. This is the portfolio's strongest differentiation signal — you build tools, not just use them.
+**Highlights:** The infrastructure layer that powers every other project. Cross-referenced by P1–P3 and extended by P7–P8. This is the portfolio's strongest differentiation signal — built tools.
 
 📁 [`projects/prompt-testing-framework/`](projects/prompt-testing-framework/)
 

@@ -1,0 +1,10 @@
+{
+  "p1_summarization": {
+    "best_score": 0.648,
+    "identifier": "Claude Sonnet 4.6"
+  },
+  "p5_grounded_qa": {
+    "best_score": 0.956,
+    "identifier": "Claude Haiku"
+  }
+}
